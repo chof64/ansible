@@ -1,0 +1,7 @@
+/.github
+/.release-it.json
+/CHANGELOG.md
+/Dockerfile
+/node_modules
+/package-lock.json
+/package.json
