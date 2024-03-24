@@ -1,8 +1,6 @@
 name: Build and Push Docker Image
 on:
   push:
-    branches:
-      - main
   workflow_run:
     workflows: ["Release-it to GitHub"]
     types:
@@ -38,4 +36,4 @@ jobs:
           tags: |
             chof64/ansible:latest
             chof64/ansible:${{ steps.version.outputs.version }}
-            chof64/ansible:${{ steps.version.outputs.version }}-latest
+            chof64/ansible:main
