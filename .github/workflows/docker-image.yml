@@ -1,6 +1,5 @@
 name: Build and Push Docker Image
 on:
-  push:
   workflow_run:
     workflows: ["Release-it to GitHub"]
     types:
